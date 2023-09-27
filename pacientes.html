@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitaMedisApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>CitaMedisApp</h1>
+        <nav>
+            <h1>Pacientes</h1>
+            <ul>
+                <li><a href="#" id="enlace-login">Login</a></li>
+                <li><a href="#" id="enlace-inscribirse">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="formulario-login" style="display: none;">
+            <h2>Login</h2>
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button type="submit" id="btn-login">Iniciar Sesión</button>
+            </form>
+        </section>
+        <section id="formulario-registro" style="display: none;">
+            <h2>Registro</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="cc">Cédula:</label>
+                <input type="text" id="cc" name="cc" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <section id="formulario-inscripcion" style="display: none;">
+            <h2>Inscribirse</h2>
+            <form>
+                <label for="usuario-inscripcion">Usuario:</label>
+                <input type="text" id="usuario-inscripcion" name="usuario-inscripcion" required>
+
+                <label for="contrasena-inscripcion">Contraseña:</label>
+                <input type="password" id="contrasena-inscripcion" name="contrasena-inscripcion" required>
+
+                <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+
+                <button type="submit">Inscribirse</button>
+            </form>
+        </section>
+        <section id="citas" style="display: none;">
+            <h2>Programar Cita Médica</h2>
+            <form>
+                <label for="area-salud">Seleccionar área de salud:</label>
+                <select id="area-salud" name="area-salud">
+                    <option value="odontologia">Odontología</option>
+                    <option value="psicologia">Psicología</option>
+                    <option value="medicina-general">Medicina General</option>
+                    <option value="nutricion">Nutrición</option>
+                </select>
+                <label for="personal-salud">Seleccionar personal de salud:</label>
+                <select id="personal-salud" name="personal-salud">
+                    <option value="medico1">Dr. Carlos Ballesteros</option>
+                    <option value="medico2">Dra. Carlos García</option>
+                    <!-- Agrega más opciones de personal de salud aquí -->
+                </select>
+                <label for="fecha-cita">Fecha:</label>
+                <input type="date" id="fecha-cita" name="fecha-cita" required>
+
+                <label for="hora-cita">Hora:</label>
+                <input type="time" id="hora-cita" name="hora-cita" required>
+
+                <button type="submit">Programar Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 App de Citas Médicas</p>
+    </footer>
+</body>
+</html>
